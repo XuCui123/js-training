@@ -16,3 +16,4 @@ $ npm test
 ## License
 
 js-training is available under the terms of the MIT License.
+hello！
