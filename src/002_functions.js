@@ -11,5 +11,12 @@
  * => {name: 'curly', age: 60};
  */
 export function max (arr, iteratee) {
-
+  if (!arr || !arr.length) return null;
+  let temp = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (iteratee(arr[i]) > iteratee(temp)) {
+      temp = arr[i];
+    }
+  }
+  return temp;
 }

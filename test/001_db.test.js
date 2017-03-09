@@ -39,7 +39,7 @@ describe('Test: 001_db.js', () => {
     expect(item.name).to.equal('bar');
 
     const notFound = DB.find(3);
-    expect(notFound).to.be.a('null');
+    expect(notFound).to.be.a('undefined');
   });
 
   it('DB.remove should remove data', () => {
